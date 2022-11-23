@@ -1,0 +1,9 @@
+main:
+  - title: 'Products'
+    url: '/products'
+
+  - title: 'Contact'
+    url: '/contact'
+
+  - title: 'Support'
+    url: '/support'
