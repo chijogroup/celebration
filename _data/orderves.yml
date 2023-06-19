@@ -1,8 +1,0 @@
-
-plans:
-  - name: 'Standard'
-    price: '$9.99'
-
-
-  - name: 'Premium'
-    price: '$29.99'

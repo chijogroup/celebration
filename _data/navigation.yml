@@ -1,9 +1,14 @@
 main:
-  - title: 'Products'
-    url: '/products'
+  - title: 'Itinerary'
+    url: '/itinerary'
 
-  - title: 'Contact'
-    url: '/contact'
+  - title: 'Hotels'
+    url: '/hotels'
 
   - title: 'Support'
     url: '/support'
+
+
+footer:
+  - title: 'Contact'
+    url: '/contact'
