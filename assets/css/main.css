@@ -7,3 +7,11 @@
 
 @import "tailwindcss/utilities";
 
+
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
+
+
+.font-writing {
+  font-family: 'Oooh Baby', cursive;
+}
+
