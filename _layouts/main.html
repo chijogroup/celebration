@@ -11,3 +11,84 @@ layout: default
 
 {% include footer.html %}
 
+
+<script>
+
+
+class DayCountdown extends HTMLElement {
+
+    constructor() {
+        super();
+    }
+
+    connectedCallback() {
+        this.run();
+    }
+
+
+    run() {
+
+        const countDownDate = new Date("August 26, 2023 16:30:00");
+
+
+        let x = setInterval(() => {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            //this.querySelector("[data-days]").innerHTML = days;
+
+            // Display the result in the element with id="demo"
+            this.innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+            this.innerHTML = `
+                <span class="flex flex-col items-center align-center gap-4" data-days>
+                    ${days}
+                    <span class="text-sm">days</span>
+                </span>
+                <span class="flex flex-col items-center align-center gap-4" data-hours>
+                    ${hours}
+                    <span class="text-sm">hours</span>
+                </span>
+                <span class="flex flex-col items-center align-center gap-4" data-minutes>
+                    ${minutes}
+                    <span class="text-sm">minutes</span>
+                </span>
+                <span class="flex flex-col items-center align-center gap-4" data-seconds>
+                    ${seconds}
+                    <span class="text-sm">seconds</span>
+                </span>
+
+
+            `
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                this.innerHTML = "IT'S TIME";
+            }
+        }, 1000);
+    }
+
+
+    calculate(toDate) {
+
+    }
+
+}
+
+customElements.define("day-countdown", DayCountdown);
+
+
+</script>
+
