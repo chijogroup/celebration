@@ -9,23 +9,11 @@
 
 
 
-
-@font-face {
-    font-family: "AbramoScript";
-    src: url("../fonts/AbramoScript.eot");
-    src: url("../fonts/AbramoScript.woff") format("woff"),
-    url("../fonts/AbramoScript.otf") format("opentype"),
-    url("../fonts/AbramoScript.svg#filename") format("svg");
+body {
+    font-family: 'Ysabeau Infant', sans-serif;
 }
 
 
-@font-face {
-    font-family: "AbramoSerif";
-    src: url("../fonts/AbramoSerif.eot");
-    src: url("../fonts/AbramoSerif.woff") format("woff"),
-    url("../fonts/AbramoSerif.otf") format("opentype"),
-    url("../fonts/AbramoSerif.svg#filename") format("svg");
-}
 
 
 body {
@@ -34,14 +22,6 @@ body {
 
 
 
-
-.font-abramo-script {
-    font-family: "AbramoScript";
-}
-
-.font-abramo-serif {
-    font-family: "AbramoSerif";
-}
 
 .content div {
     position: relative;
