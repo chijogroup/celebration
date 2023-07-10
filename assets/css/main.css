@@ -52,3 +52,11 @@
 .day-countdown__block span {
     font-size: 0.875rem;
 }
+
+
+.aspect-square-fallback {
+    padding-top: 100%;
+    height: 0;
+    position: relative;
+    overflow: hidden;
+}
