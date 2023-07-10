@@ -24,7 +24,7 @@ class DayCountdown extends HTMLElement {
         if (daysRounded < 1) {
             this.innerHTML = `Today is the day!`
         } else if (daysRounded > 1) {
-            this.innerHTML = `${daysRounded} daysp`
+            this.innerHTML = `${daysRounded} days`
         } else {
             this.innerHTML = `${daysRounded} day`
         }
