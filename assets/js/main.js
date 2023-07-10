@@ -7,7 +7,7 @@ class DayCountdown extends HTMLElement {
 
     connectedCallback() {
 
-        this.targetDate = new Date('2023, 08, 26');
+        this.targetDate = new Date(2023, 08, 26);
         this.nowDate = new Date();
 
         this.run();
