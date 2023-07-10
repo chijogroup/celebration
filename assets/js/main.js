@@ -1,4 +1,3 @@
-
 class DayCountdown extends HTMLElement {
 
     constructor() {
@@ -7,7 +6,7 @@ class DayCountdown extends HTMLElement {
 
     connectedCallback() {
 
-        this.targetDate = new Date("08/26/2023");
+        this.targetDate = new Date("2023/08/26");
         this.nowDate = new Date();
 
         this.run();
@@ -25,7 +24,7 @@ class DayCountdown extends HTMLElement {
         if (daysRounded < 1) {
             this.innerHTML = `Today is the day!`
         } else if (daysRounded > 1) {
-            this.innerHTML = `${daysRounded} days`
+            this.innerHTML = `${daysRounded} daysp`
         } else {
             this.innerHTML = `${daysRounded} day`
         }
